@@ -1,0 +1,42 @@
+.svg-img {
+    width: 300px;
+    height: 700px;
+  }
+:host {
+    --content-padding: 10px;
+  }
+  header {
+    display: block;
+    height: 60px;
+    padding: var(--content-padding);
+    box-shadow: 0px 5px 25px var(--shadow-color);
+  }
+  .content {
+    padding: var(--content-padding);
+    padding-top: 56px; /* Same height as the toolbar */
+    background-color: #BFF7F3; /* Example color: light grey */
+    padding-top: 56px; /* Adjust this value if your navbar height is different */
+    min-height: calc(100vh - 56px); /* Subtract the navbar height from 100vh */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* If you are using flexbox */
+    background-color: #BFF7F3;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
