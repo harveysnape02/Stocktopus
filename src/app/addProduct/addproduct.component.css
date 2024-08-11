@@ -1,0 +1,98 @@
+.formTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #7f7ea150, #81aaa771);
+    border-radius: 4px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #90bdba71; /* Adds a black line at the bottom */
+}
+
+.title {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.addFormSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputForm {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    background: linear-gradient(to bottom, #7f7ea150, #81aaa771);
+    border-radius: 4px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #90bdba71;
+    width: 100%;
+}
+
+.inputItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.editableText {
+    border: solid 1px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 4px;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.categoryWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.addButtonWrapper {
+    grid-column: 2; /* Center the button in the second column */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;
+}
+
+.addBtn {
+    background: var(--primary-color);
+    border: none;
+    text-align: center; /* Centered text */
+    display: inline-block; /* Get the element to respect width and height */
+    font-size: 16px; /* Increase font size */
+    padding: 14px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .inputForm {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (min-width: 900px) {
+    .inputForm {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.helpBtn{
+  color: var(--primary-color);;
+  background-color: #bdffec00;
+  width: 50px;
+  height: 50px;
+  border: none;
+}

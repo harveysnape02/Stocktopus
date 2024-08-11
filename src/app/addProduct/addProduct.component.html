@@ -1,0 +1,63 @@
+<header>
+    <app-navbar></app-navbar>
+</header>
+<br>
+<section class="formTitle">
+    <section>
+        <h2 class="title">
+            Add a new product to Stocktopus !
+        </h2>
+    </section>
+    <br>
+    <section>
+        <h3>Enter the details of the new product to be added. All fields must be fully filled in to succesfully add a new product.</h3>
+    </section>
+    <section>
+        <br>
+    </section>
+</section>
+<br>
+<section class="addFormSection">
+    <section class="inputForm">
+        <div class="inputItem">
+            <span class="label">Name for new product: </span>
+            <input type="text" class="editableText" id="nameAdd" #nameAdd/>
+        </div>
+        <div class="inputItem">
+            <span class="label">A brief description of the product: </span>
+            <input type="text" class="editableText" id="descriptionAdd" #descriptionAdd/>
+        </div>
+        <div class="inputItem">
+            <span class="label">The cost to buy (in GBP): </span>
+            <input type="number" class="editableText" id="costAdd" #costAdd/>
+        </div>
+        <div class="inputItem">
+            <span class="label">The price to sell (in GBP): </span>
+            <input type="number" class="editableText" id="ppuAdd" #ppuAdd/>
+        </div>
+        <div class="inputItem">
+            <span class="label">Supplier: </span>
+            <input type="text" class="editableText" id="supplierAdd" #supplierAdd/>
+        </div>
+        <div class="inputItem">
+            <span class="label">Quantity of new product: </span>
+            <input type="number" class="editableText" id="qtyAdd" #qtyAdd/>
+        </div>
+        <div class="inputItem">
+            <span class="label">The HTTP link to an image of the product: </span>
+            <input type="text" class="editableText" id="imageAdd" #imageAdd/>
+        </div>
+        <div class="inputItem">
+            <span class="label">The product category: </span>
+            <div class="categoryWrapper">
+                <input type="text" class="editableText" id="categoryAdd" #categoryAdd/>
+                <button class="helpBtn" mat-raised-button [matTooltip]="getCategoriesTooltip()" aria-label="Button that displays a tooltip when hovered over">
+                    <mat-icon>help</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="inputItem addButtonWrapper">
+            <button (click)="addProducts()" class="addBtn">Add Product to Stocktopus database</button>
+        </div>
+    </section>
+</section>
